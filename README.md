@@ -1,5 +1,5 @@
 # Code repository for GNN-Bet
-This repository contains implementation for paper "Fast approximations of betweenness centrality using Graph Neural Networks".
+This repository contains implementation for paper "Fast Approximations of Betweenness Centrality using Graph Neural Networks" which is accepted as short research paper in CIKM 2019.
 
 Code is written in Python and the proposed model is implemented using Pytorch.
 
