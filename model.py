@@ -43,6 +43,7 @@ class GNN_Bet(nn.Module):
         x2_4 = F.relu(self.gc4(x2_3,adj2))
 
         #Score Calculations
+        #to-do: make a MLP layer and import here
         score1_1 = F.relu(self.linear1(x_1))
         score1_1 = F.dropout(score1_1,self.dropout)
         score1_1 = F.relu(self.linear2(score1_1))

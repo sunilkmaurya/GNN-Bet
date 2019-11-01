@@ -35,7 +35,7 @@ def train(list_adj_train,list_adj_t_train,list_num_node_train,bc_mat_train):
     model.train()
     total_count_train = list()
     loss_train = 0
-    num_samples_train = len(list_adj_test)
+    num_samples_train = len(list_adj_train)
     for i in range(num_samples_train):
         adj = list_adj_train[i]
         num_nodes = list_num_node_train[i]
@@ -93,7 +93,8 @@ for e in range(num_epoch):
     print(f"Epoch number: {e}")
     train(list_adj_train,list_adj_t_train,list_num_node_train,bc_mat_train)
 #test on 10 test graphs and print average KT Score and its stanard deviation
-test(list_adj_test,list_adj_t_test,list_num_node_test,bc_mat_test)
+with torch.no_grad():
+    test(list_adj_test,list_adj_t_test,list_num_node_test,bc_mat_test)
 
 
     
