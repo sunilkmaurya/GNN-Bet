@@ -14,3 +14,8 @@ For easy check, we have provided small synthetic dataset. The given dataset cons
     python main.py
 
 outputs the average Kendall's Tau score of test graphs.
+
+**Addition-1**
+I have added a Jupyter notebook to show some interesting observations. We simplify the model to single layer and train it to rank nodes based on degree centrality. We see that the trained model can easily rank the nodes with respect to degree centrality in new different types of graphs without being provided any explicit information. These observations are not discussed in the paper.
+
+
