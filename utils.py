@@ -107,7 +107,7 @@ def graph_to_adj(list_graph,list_n_sequence,list_node_num,model_size):
         graph = nx.MultiDiGraph()
         graph.add_edges_from(edges)
 
-        self_loops = [i for i in graph.selfloop_edges()]
+        self_loops = [i for i in nx.selfloop_edges(graph)]
         graph.remove_edges_from(self_loops)
         node_sequence = list_n_sequence[i]
 
