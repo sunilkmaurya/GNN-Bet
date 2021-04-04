@@ -30,5 +30,7 @@ score = F.dropout(score_temp,self.dropout,self.training)
 ```
 improves the performance similar to original results. In addition to this fix, I found results varying a bit (between older and newer versions) even with same random seed. I will look into it and provide a patch for newer PyTorch versions.
 
+**Note-2**
+For more extensive code, please visit this [repository](https://github.com/sunilkmaurya/GNN_Ranking).
 
 
